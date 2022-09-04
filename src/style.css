@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+:root {
+  --mainFont: 'Montserrat', sans-serif;
+  --secondFont: 'Roboto Mono', monospace;
+}
+::selection {
+  background-color: tomato;
+}
+/* Navbar */
+.navbar .navbar-brand {
+  color: #0ab9b1;
+}
+.navbar .navbar-brand:hover {
+  color: aquamarine;
+}
+.nav-link {
+  color: grey;
+}
+.nav-link:hover {
+  color: rgb(131, 105, 105);
+}
+/* Navbar */
+
+/* Hamburger Menu */
+.navbar-toggler {
+  border: 0;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-collapsed {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+}
+.toggler-icon {
+  width: 30px;
+  height: 3px;
+  display: block;
+  background-color: #10f5eb;
+  transition: all 0.6s;
+}
+.middle-bar {
+  margin: 5px auto;
+}
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+/* Hamburger Menu */
+
+/* Beranda */
+.display-5 {
+  font-family: var(--secondFont);
+  color: #0ab9b1;
+}
+.display-6 {
+  font-size: 21px;
+}
+@media (max-width: 768px) {
+  #beranda {
+    margin-top: 70px;
+  }
+}
+/* Beranda */
+/* About */
+#about h2 {
+  font-family: var(--mainFont);
+}
+.justify {
+  text-align: justify;
+}
+/* About */
+/* Services */
+#services h2 {
+  font-family: var(--mainFont);
+}
+/* Services */
+/* Galery */
+#galery h2 {
+  font-family: var(--mainFont);
+}
+/* Galery */
+/* Contact */
+#contact h2 {
+  font-family: var(--mainFont);
+}
+/* Contact */
+/* Footer */
+.info-footer {
+  font-family: var(--secondFont);
+  font-weight: 500;
+}
+.title-footer {
+  font-family: var(--mainFont);
+}
+.social {
+  text-decoration: none;
+  color: black;
+  font-family: var(--secondFont);
+  font-weight: 600;
+}
+.build-by {
+  font-family: var(--secondFont);
+  font-weight: 600;
+  margin-top: 30px;
+}
+/* Footer */
+/* ToTop */
+#toTop {
+  bottom: 0;
+  right: 0;
+  display: flex;
+  position: fixed;
+  font-size: 30px;
+  margin: 15px;
+  background-color: #ffff;
+  cursor: pointer;
+}
+/* ToTop */
